@@ -1,0 +1,15 @@
+<html>  <head><meta http-equiv=Content-Type content="text/html; charset=UTF-8"/></head><style>
+table, th, td {
+  text-align: center;
+  font-weight:normal; 
+}
+
+td {
+    padding:0 5px;
+}
+h1{
+  font-size:20px;
+  height:20px;
+  font-weight:normal
+ }
+</style> <body>  <h1>Paid History Audit</h1>  <table border=1 frame=void rules=rows style="width:100%">  <tr>  <th>Comp Cd</th>  <th>Vendor Number</th>  <th>Vendor Name</th>  <th>PO Number</th>  <th>Invoice Number</th>  <th>Invoice Date</th>  <th>Payment Number</th>  <th>Payment Date</th>  <th>Gross Amount</th>  <th>Discount Amount</th>  <th>Net Amount</th>  </tr>  <#list claimDetails as claimSchedule>  <tr>  <td>${claimSchedule.compCd}</td>  <td>${claimSchedule.vendorNumber}</td>  <td>${claimSchedule.vendorName}</td>  <td>${claimSchedule.poNumber}</td>  <td>${claimSchedule.invoiceNumber}</td>  <td>${claimSchedule.invoiceDate}</td>  <td>${claimSchedule.paymentNumber}</td>  <td>${claimSchedule.paymentDate}</td>  <td>${claimSchedule.amount}</td>  <td>${claimSchedule.discount}</td>  <td>${claimSchedule.netAmount}</td>  </tr>  </#list>  </table>  </body>  </html>
