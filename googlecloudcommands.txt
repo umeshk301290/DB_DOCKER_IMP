@@ -1,0 +1,11 @@
+gcloud app logs tail -s default : - logs
+
+gcloud app browse :- browser
+
+gcloud config list - configuration list
+
+gcloud auth login - for login into accunt
+
+gcloud config set project springbootproject-276513 - set proj confi
+
+https://static.brandonpotter.com/kubernetes/DeploymentBuilder.html

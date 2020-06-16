@@ -1,0 +1,35 @@
+DockerFile :-
+
+FROM openjdk:8-jre
+ADD target/docker-1.0-SNAPSHOT.jar app.jar
+RUN /bin/sh -c /bin/sh -c make /sec
+EXPOSE 8280
+ENTRYPOINT ["java","-jar","/app.jar"] 
+
+docker ps 
+docker ls
+
+docker login
+
+create repo in docker hub
+build :- 
+
+docker build .
+
+image -
+docker images ls
+
+tag :- 
+docker tag ed2c3f27eeca umeshk301290/samplerepo:latest01
+
+push 
+docker push umeshk301290/samplerepo:latest01
+
+pull
+docker pull umeshk301290/samplerepo:latest01
+
+run
+docker run -p 8090:8090 048eb1c4b58e 
+
+docker stop containerid
+

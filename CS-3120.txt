@@ -1,0 +1,125 @@
+https://medium.com/better-programming/customize-your-mysql-database-in-docker-723ffd59d8fb
+https://medium.com/google-cloud/deploying-docker-images-to-google-cloud-using-kubernetes-engine-637af009e594
+https://kubernetes.io/docs/tasks/run-application/run-single-instance-stateful-application/#:~:text=Deploy%20MySQL,MySQL%20and%20references%20the%20PersistentVolumeClaim.
+https://stackoverflow.com/questions/60175522/kubernetes-persistentvolumeclaim-error-forbidden-is-immutable-after-creation
+https://jira.nagarro.com/projects/BNSEH/issues/BNSEH-2913?filter=allopenissues
+https://stackoverflow.com/questions/53001506/spring-boot-application-on-kubernetes-how-to-use-external-message-properties-fil
+https://dzone.com/articles/first-steps-with-gcp-sql
+106.223.83.114
+https://medium.com/@DazWilkin/opencensus-tracing-w-jaeger-2ada1656a2bf
+https://stackoverflow.com/questions/61154096/how-to-deploy-jaeger-on-kubernetes-gke
+https://static.brandonpotter.com/kubernetes/DeploymentBuilder.html
+http://gpi-gpi-service-test.sta-openshift-app.nix.cydmodule.com/swagger-ui.html - gpi swagger
+https://dzone.com/articles/spring-boot-restful-api-documentation-with-swagger
+https://wd3.myworkday.com/netent/d/home.htmld
+https://confluence.netent.com/display/CP/Searching+GPI+logs+in+Logz.io
+C:\Users\umeshkumar01\Desktop\audit\BookStoreManagement
+alias -p sa='vim /usr/share/jbossas/standalone/configuration/standalone-full-ha.xml'
+alias -p logs='tail -100f /var/log/jbossas/standalone/server.log'
+alias -p vilogs='vim /var/log/jbossas/standalone/server.log'
+alias -p logsnoinfo='tail -100f /var/log/jbossas/standalone/server.log | grep -Ev "INFO|^$"'
+alias -p restart='service jbossas restart'
+alias -p start='service jbossas start'
+alias -p stop='service jbossas stop'
+alias -p status='service jbossas status'
+alias -p info='yum info spp-platform-prod'
+alias -p upgrade='yum upgrade spp-platform-prod'
+
+https://github.com/umeshk301290/BookStoreManagement
+\\172.16.1.203\Basic Softwares\Java\JDK
+https://medium.com/@maorfr/template-everything-with-helm-48e5a32ff72d
+https://dzone.com/articles/rest-api-testing-using-the-zerocode-json-based-bdd
+
+--changeset Umesh:CS-2915-CREATE-TABLE
+
+CREATE TABLE [dbo].[ClaimTemplateMapping](
+	[Id] [bigint] IDENTITY(1,1) NOT NULL,
+	[Categeory] [varchar](255) NULL,
+	[MappingColumnLabel] [varchar](255) NULL,
+	[MappingExceptionField] [varchar](255) NULL,
+	[CreatedBy] [varchar](50) NULL,
+	[CreatedDate] [datetime2](7) NULL,
+	[LastModifiedBy] [varchar](50) NULL,
+	[LastModifiedDate] [datetime2](7) NULL,
+	[Deleted] [bit] NULL,
+
+	CONSTRAINT [PK_ClaimTemplateMapping] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)
+
+) ON [PRIMARY]
+
+--rollback DROP TABLE [dbo].[ClaimTemplateMapping]
+
+
+CREATE TABLE [dbo].[ClaimTemplateMapping](
+	[Id] [bigint] IDENTITY(1,1) NOT NULL,
+	[Categeory] [varchar](255) NULL,
+	[MappingColumnLabel] [varchar](255) NULL,
+	[MappingExceptionField] [varchar](255) NULL,
+	[CreatedBy] [varchar](50) NULL,
+	[CreatedDate] [datetime2](7) NULL,
+	[LastModifiedBy] [varchar](50) NULL,
+	[LastModifiedDate] [datetime2](7) NULL,
+	[Deleted] [bit] NULL,
+
+	CONSTRAINT [PK_ClaimTemplateMapping] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)
+
+) ON [PRIMARY]
+
+
+
+
+
+insert into [dbo].[ClaimTemplateMapping] (Categeory,Mappingcolumnlabel,MappingExceptionField,CreatedBy,CreatedDate,LastModifiedBy,LastModifiedDate,Deleted) values ('CLAIM','application','auditName','Prgx',CURRENT_TIMESTAMP,'Prgx',CURRENT_TIMESTAMP,NULL)
+insert into [dbo].[ClaimTemplateMapping] (Categeory,Mappingcolumnlabel,MappingExceptionField,CreatedBy,CreatedDate,LastModifiedBy,LastModifiedDate,Deleted) values ('CLAIM','businessUnit','businessUnit','Prgx',CURRENT_TIMESTAMP,'Prgx',CURRENT_TIMESTAMP,NULL)
+insert into [dbo].[ClaimTemplateMapping] (Categeory,Mappingcolumnlabel,MappingExceptionField,CreatedBy,CreatedDate,LastModifiedBy,LastModifiedDate,Deleted) values ('CLAIM','claimNumber','claimNumber','Prgx',CURRENT_TIMESTAMP,'Prgx',CURRENT_TIMESTAMP,NULL)
+insert into [dbo].[ClaimTemplateMapping] (Categeory,Mappingcolumnlabel,MappingExceptionField,CreatedBy,CreatedDate,LastModifiedBy,LastModifiedDate,Deleted) values ('CLAIM','claimDate','claimDate','Prgx',CURRENT_TIMESTAMP,'Prgx',CURRENT_TIMESTAMP,NULL)
+insert into [dbo].[ClaimTemplateMapping] (Categeory,Mappingcolumnlabel,MappingExceptionField,CreatedBy,CreatedDate,LastModifiedBy,LastModifiedDate,Deleted) values ('CLAIM','claimAmount','claimAmount','Prgx',CURRENT_TIMESTAMP,'Prgx',CURRENT_TIMESTAMP,NULL)
+insert into [dbo].[ClaimTemplateMapping] (Categeory,Mappingcolumnlabel,MappingExceptionField,CreatedBy,CreatedDate,LastModifiedBy,LastModifiedDate,Deleted) values ('CLAIM','claimCurrency','claimCurrency','Prgx',CURRENT_TIMESTAMP,'Prgx',CURRENT_TIMESTAMP,NULL)
+insert into [dbo].[ClaimTemplateMapping] (Categeory,Mappingcolumnlabel,MappingExceptionField,CreatedBy,CreatedDate,LastModifiedBy,LastModifiedDate,Deleted) values ('CLAIM','vendorName','vendorName','Prgx',CURRENT_TIMESTAMP,'Prgx',CURRENT_TIMESTAMP,NULL)
+insert into [dbo].[ClaimTemplateMapping] (Categeory,Mappingcolumnlabel,MappingExceptionField,CreatedBy,CreatedDate,LastModifiedBy,LastModifiedDate,Deleted) values ('CLAIM','problemType','problemType','Prgx',CURRENT_TIMESTAMP,'Prgx',CURRENT_TIMESTAMP,NULL)
+insert into [dbo].[ClaimTemplateMapping] (Categeory,Mappingcolumnlabel,MappingExceptionField,CreatedBy,CreatedDate,LastModifiedBy,LastModifiedDate,Deleted) values ('CLAIM','creditReference','','Prgx',CURRENT_TIMESTAMP,'Prgx',CURRENT_TIMESTAMP,NULL)
+insert into [dbo].[ClaimTemplateMapping] (Categeory,Mappingcolumnlabel,MappingExceptionField,CreatedBy,CreatedDate,LastModifiedBy,LastModifiedDate,Deleted) values ('CLAIM','creditReferenceDate','','Prgx',CURRENT_TIMESTAMP,'Prgx',CURRENT_TIMESTAMP,NULL)
+insert into [dbo].[ClaimTemplateMapping] (Categeory,Mappingcolumnlabel,MappingExceptionField,CreatedBy,CreatedDate,LastModifiedBy,LastModifiedDate,Deleted) values ('CLAIM','rootCause','rootCauseDescription','Prgx',CURRENT_TIMESTAMP,'Prgx',CURRENT_TIMESTAMP,NULL)
+insert into [dbo].[ClaimTemplateMapping] (Categeory,Mappingcolumnlabel,MappingExceptionField,CreatedBy,CreatedDate,LastModifiedBy,LastModifiedDate,Deleted) values ('CLAIM','vendorNumber','vendorNumber','Prgx',CURRENT_TIMESTAMP,'Prgx',CURRENT_TIMESTAMP,NULL)
+insert into [dbo].[ClaimTemplateMapping] (Categeory,Mappingcolumnlabel,MappingExceptionField,CreatedBy,CreatedDate,LastModifiedBy,LastModifiedDate,Deleted) values ('CLAIM','invoiceNumber','','Prgx',CURRENT_TIMESTAMP,'Prgx',CURRENT_TIMESTAMP,NULL)
+insert into [dbo].[ClaimTemplateMapping] (Categeory,Mappingcolumnlabel,MappingExceptionField,CreatedBy,CreatedDate,LastModifiedBy,LastModifiedDate,Deleted) values ('CLAIM','invoiceDate','','Prgx',CURRENT_TIMESTAMP,'Prgx',CURRENT_TIMESTAMP,NULL)
+insert into [dbo].[ClaimTemplateMapping] (Categeory,Mappingcolumnlabel,MappingExceptionField,CreatedBy,CreatedDate,LastModifiedBy,LastModifiedDate,Deleted) values ('CLAIM','paymentNumber','','Prgx',CURRENT_TIMESTAMP,'Prgx',CURRENT_TIMESTAMP,NULL)
+insert into [dbo].[ClaimTemplateMapping] (Categeory,Mappingcolumnlabel,MappingExceptionField,CreatedBy,CreatedDate,LastModifiedBy,LastModifiedDate,Deleted) values ('CLAIM','paymentDate','','Prgx',CURRENT_TIMESTAMP,'Prgx',CURRENT_TIMESTAMP,NULL)
+insert into [dbo].[ClaimTemplateMapping] (Categeory,Mappingcolumnlabel,MappingExceptionField,CreatedBy,CreatedDate,LastModifiedBy,LastModifiedDate,Deleted) values ('CLAIM','poNumber','','Prgx',CURRENT_TIMESTAMP,'Prgx',CURRENT_TIMESTAMP,NULL)
+insert into [dbo].[ClaimTemplateMapping] (Categeory,Mappingcolumnlabel,MappingExceptionField,CreatedBy,CreatedDate,LastModifiedBy,LastModifiedDate,Deleted) values ('CLAIM','narrative','narrative','Prgx',CURRENT_TIMESTAMP,'Prgx',CURRENT_TIMESTAMP,NULL)
+insert into [dbo].[ClaimTemplateMapping] (Categeory,Mappingcolumnlabel,MappingExceptionField,CreatedBy,CreatedDate,LastModifiedBy,LastModifiedDate,Deleted) values ('CLAIM','summaryType','Audit','Prgx',CURRENT_TIMESTAMP,'Prgx',CURRENT_TIMESTAMP,NULL)
+insert into [dbo].[ClaimTemplateMapping] (Categeory,Mappingcolumnlabel,MappingExceptionField,CreatedBy,CreatedDate,LastModifiedBy,LastModifiedDate,Deleted) values ('CLAIM','auditProject','auditProject','Prgx',CURRENT_TIMESTAMP,'Prgx',CURRENT_TIMESTAMP,NULL)
+insert into [dbo].[ClaimTemplateMapping] (Categeory,Mappingcolumnlabel,MappingExceptionField,CreatedBy,CreatedDate,LastModifiedBy,LastModifiedDate,Deleted) values ('CLAIM','clientClaimNumber','clientClaimNumber','Prgx',CURRENT_TIMESTAMP,'Prgx',CURRENT_TIMESTAMP,NULL)
+insert into [dbo].[ClaimTemplateMapping] (Categeory,Mappingcolumnlabel,MappingExceptionField,CreatedBy,CreatedDate,LastModifiedBy,LastModifiedDate,Deleted) values ('CLAIM','disposition','disposition','Prgx',CURRENT_TIMESTAMP,'Prgx',CURRENT_TIMESTAMP,NULL)
+insert into [dbo].[ClaimTemplateMapping] (Categeory,Mappingcolumnlabel,MappingExceptionField,CreatedBy,CreatedDate,LastModifiedBy,LastModifiedDate,Deleted) values ('CLAIM','stage','stage','Prgx',CURRENT_TIMESTAMP,'Prgx',CURRENT_TIMESTAMP,NULL)
+insert into [dbo].[ClaimTemplateMapping] (Categeory,Mappingcolumnlabel,MappingExceptionField,CreatedBy,CreatedDate,LastModifiedBy,LastModifiedDate,Deleted) values ('CLAIM','status','status','Prgx',CURRENT_TIMESTAMP,'Prgx',CURRENT_TIMESTAMP,NULL)
+insert into [dbo].[ClaimTemplateMapping] (Categeory,Mappingcolumnlabel,MappingExceptionField,CreatedBy,CreatedDate,LastModifiedBy,LastModifiedDate,Deleted) values ('CLAIM','rootCauseId','rootCauseId','Prgx',CURRENT_TIMESTAMP,'Prgx',CURRENT_TIMESTAMP,NULL)
+insert into [dbo].[ClaimTemplateMapping] (Categeory,Mappingcolumnlabel,MappingExceptionField,CreatedBy,CreatedDate,LastModifiedBy,LastModifiedDate,Deleted) values ('CLAIM','projectId','projectId','Prgx',CURRENT_TIMESTAMP,'Prgx',CURRENT_TIMESTAMP,NULL)
+insert into [dbo].[ClaimTemplateMapping] (Categeory,Mappingcolumnlabel,MappingExceptionField,CreatedBy,CreatedDate,LastModifiedBy,LastModifiedDate,Deleted) values ('CLAIM','dispositionId','dispositionId','Prgx',CURRENT_TIMESTAMP,'Prgx',CURRENT_TIMESTAMP,NULL)
+insert into [dbo].[ClaimTemplateMapping] (Categeory,Mappingcolumnlabel,MappingExceptionField,CreatedBy,CreatedDate,LastModifiedBy,LastModifiedDate,Deleted) values ('CLAIM','stageId','stageId','Prgx',CURRENT_TIMESTAMP,'Prgx',CURRENT_TIMESTAMP,NULL)
+insert into [dbo].[ClaimTemplateMapping] (Categeory,Mappingcolumnlabel,MappingExceptionField,CreatedBy,CreatedDate,LastModifiedBy,LastModifiedDate,Deleted) values ('CLAIM','statusId','statusId','Prgx',CURRENT_TIMESTAMP,'Prgx',CURRENT_TIMESTAMP,NULL)
+insert into [dbo].[ClaimTemplateMapping] (Categeory,Mappingcolumnlabel,MappingExceptionField,CreatedBy,CreatedDate,LastModifiedBy,LastModifiedDate,Deleted) values ('CLAIM','vendorId','vendorId','Prgx',CURRENT_TIMESTAMP,'Prgx',CURRENT_TIMESTAMP,NULL)
+insert into [dbo].[ClaimTemplateMapping] (Categeory,Mappingcolumnlabel,MappingExceptionField,CreatedBy,CreatedDate,LastModifiedBy,LastModifiedDate,Deleted) values ('CLAIM','problemTypeId','problemTypeId','Prgx',CURRENT_TIMESTAMP,'Prgx',CURRENT_TIMESTAMP,NULL)
+insert into [dbo].[ClaimTemplateMapping] (Categeory,Mappingcolumnlabel,MappingExceptionField,CreatedBy,CreatedDate,LastModifiedBy,LastModifiedDate,Deleted) values ('CLAIM','exchangeRate','exchangeRate','Prgx',CURRENT_TIMESTAMP,'Prgx',CURRENT_TIMESTAMP,NULL)
+insert into [dbo].[ClaimTemplateMapping] (Categeory,Mappingcolumnlabel,MappingExceptionField,CreatedBy,CreatedDate,LastModifiedBy,LastModifiedDate,Deleted) values ('CLAIM','appVendorId','appVendorId','Prgx',CURRENT_TIMESTAMP,'Prgx',CURRENT_TIMESTAMP,NULL)
+insert into [dbo].[ClaimTemplateMapping] (Categeory,Mappingcolumnlabel,MappingExceptionField,CreatedBy,CreatedDate,LastModifiedBy,LastModifiedDate,Deleted) values ('CLAIM','templateId','templateId','Prgx',CURRENT_TIMESTAMP,'Prgx',CURRENT_TIMESTAMP,NULL)
+
+
+
+insert into [dbo].[ClaimTemplateMapping] (Categeory,Mappingcolumnlabel,MappingExceptionField,CreatedBy,CreatedDate,LastModifiedBy,LastModifiedDate,Deleted) values ('CLAIMDETAILS','compCd','COMP_CD','Prgx',CURRENT_TIMESTAMP,'Prgx',CURRENT_TIMESTAMP,NULL)
+insert into [dbo].[ClaimTemplateMapping] (Categeory,Mappingcolumnlabel,MappingExceptionField,CreatedBy,CreatedDate,LastModifiedBy,LastModifiedDate,Deleted) values ('CLAIMDETAILS','vendorNumber','VEND_NUM','Prgx',CURRENT_TIMESTAMP,'Prgx',CURRENT_TIMESTAMP,NULL)
+insert into [dbo].[ClaimTemplateMapping] (Categeory,Mappingcolumnlabel,MappingExceptionField,CreatedBy,CreatedDate,LastModifiedBy,LastModifiedDate,Deleted) values ('CLAIMDETAILS','vendorName','VEND_NAME','Prgx',CURRENT_TIMESTAMP,'Prgx',CURRENT_TIMESTAMP,NULL)
+insert into [dbo].[ClaimTemplateMapping] (Categeory,Mappingcolumnlabel,MappingExceptionField,CreatedBy,CreatedDate,LastModifiedBy,LastModifiedDate,Deleted) values ('CLAIMDETAILS','poNumber','PO_NUM','Prgx',CURRENT_TIMESTAMP,'Prgx',CURRENT_TIMESTAMP,NULL)
+insert into [dbo].[ClaimTemplateMapping] (Categeory,Mappingcolumnlabel,MappingExceptionField,CreatedBy,CreatedDate,LastModifiedBy,LastModifiedDate,Deleted) values ('CLAIMDETAILS','invoiceNumber','INV_NUM','Prgx',CURRENT_TIMESTAMP,'Prgx',CURRENT_TIMESTAMP,NULL)
+insert into [dbo].[ClaimTemplateMapping] (Categeory,Mappingcolumnlabel,MappingExceptionField,CreatedBy,CreatedDate,LastModifiedBy,LastModifiedDate,Deleted) values ('CLAIMDETAILS','invoiceDate','INVDATE','Prgx',CURRENT_TIMESTAMP,'Prgx',CURRENT_TIMESTAMP,NULL)
+insert into [dbo].[ClaimTemplateMapping] (Categeory,Mappingcolumnlabel,MappingExceptionField,CreatedBy,CreatedDate,LastModifiedBy,LastModifiedDate,Deleted) values ('CLAIMDETAILS','paymentNumber','CHK_NUM','Prgx',CURRENT_TIMESTAMP,'Prgx',CURRENT_TIMESTAMP,NULL)
+insert into [dbo].[ClaimTemplateMapping] (Categeory,Mappingcolumnlabel,MappingExceptionField,CreatedBy,CreatedDate,LastModifiedBy,LastModifiedDate,Deleted) values ('CLAIMDETAILS','paymentDate','CHKDATE','Prgx',CURRENT_TIMESTAMP,'Prgx',CURRENT_TIMESTAMP,NULL)
+insert into [dbo].[ClaimTemplateMapping] (Categeory,Mappingcolumnlabel,MappingExceptionField,CreatedBy,CreatedDate,LastModifiedBy,LastModifiedDate,Deleted) values ('CLAIMDETAILS','amount','GROSSAMT','Prgx',CURRENT_TIMESTAMP,'Prgx',CURRENT_TIMESTAMP,NULL)
+insert into [dbo].[ClaimTemplateMapping] (Categeory,Mappingcolumnlabel,MappingExceptionField,CreatedBy,CreatedDate,LastModifiedBy,LastModifiedDate,Deleted) values ('CLAIMDETAILS','discount','DISCAMT','Prgx',CURRENT_TIMESTAMP,'Prgx',CURRENT_TIMESTAMP,NULL)
+insert into [dbo].[ClaimTemplateMapping] (Categeory,Mappingcolumnlabel,MappingExceptionField,CreatedBy,CreatedDate,LastModifiedBy,LastModifiedDate,Deleted) values ('CLAIMDETAILS','netAmount','NETAMT','Prgx',CURRENT_TIMESTAMP,'Prgx',CURRENT_TIMESTAMP,NULL)
