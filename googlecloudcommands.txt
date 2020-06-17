@@ -9,3 +9,9 @@ gcloud auth login - for login into accunt
 gcloud config set project springbootproject-276513 - set proj confi
 
 https://static.brandonpotter.com/kubernetes/DeploymentBuilder.html
+
+mvn com.google.cloud.tools:jib-maven-plugin:build -Dimage=gcr.io/$GOOGLE_CLOUD_PROJECT/aggregatedetails:v5
+
+gcloud container clusters get-credentials cluster-1 --zone us-central1-c --project microapp-280010 && kubectl get deployment mysql -o yaml 
+
+sudo update-java-alternatives -s java-1.8.0-openjdk-amd64 && export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
